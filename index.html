@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oura Personal Archive</title>
+<style>
+  :root{
+    --bg:#faf7f2; --card:#fff; --ink:#1a1a18; --ink-2:#55534e;
+    --rule:#e4e0d8; --accent:#2a78d6;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#141413;--card:#1c1c1a;--ink:#f2f0ec;--ink-2:#a8a49c;--rule:#2e2e2b;--accent:#6ea8f0}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;}
+  .wrap{max-width:44rem;margin:0 auto;padding:4rem 1.25rem 6rem}
+  h1{font-size:clamp(1.9rem,5vw,2.6rem);line-height:1.15;letter-spacing:-.02em;margin:0 0 .4rem}
+  .sub{color:var(--ink-2);font-size:1.05rem;margin:0 0 2.5rem}
+  h2{font-size:1.15rem;margin:2.5rem 0 .6rem;letter-spacing:-.01em}
+  p{margin:0 0 1rem;color:var(--ink-2)}
+  ul{margin:0 0 1rem;padding-left:1.2rem;color:var(--ink-2)}
+  li{margin:.3rem 0}
+  a{color:var(--accent)}
+  .card{background:var(--card);border:1px solid var(--rule);border-radius:6px;
+        padding:1.4rem 1.5rem;margin:2rem 0}
+  .card p:last-child{margin-bottom:0}
+  nav{display:flex;gap:1.25rem;flex-wrap:wrap;margin-top:3rem;padding-top:1.5rem;
+      border-top:1px solid var(--rule);font-size:.92rem}
+  footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--rule);
+         color:var(--ink-2);font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Oura Personal Archive</h1>
+  <p class="sub">A private, single-user tool for keeping a personal copy of my own Oura Ring data.</p>
+
+  <div class="card">
+    <p><strong>What this is.</strong> A small set of scripts that I run on my own computer. They connect to the Oura API with my own account, download my own measurements, and store them as CSV files on my own disk. That is the entire purpose.</p>
+  </div>
+
+  <h2>Why it exists</h2>
+  <p>I keep a long-term record of my own health measurements: blood work, body composition, cardiovascular tests. The Oura Ring produces daily sleep, activity and recovery data that belongs in the same record. This tool puts it there.</p>
+
+  <h2>Who uses it</h2>
+  <p>One person: me. It is not a product, it is not distributed, there is no sign-up, and there are no other users. It has no public interface.</p>
+
+  <h2>How it works</h2>
+  <ul>
+    <li>Runs locally on a single personal computer. There is no server and no hosted component.</li>
+    <li>Authenticates through Oura's OAuth 2.0 flow, with the redirect going to <code>127.0.0.1</code> on the same machine.</li>
+    <li>Tokens are written to a local file that never leaves the machine.</li>
+    <li>Downloaded data is written to local CSV files.</li>
+  </ul>
+
+  <h2>What it does not do</h2>
+  <ul>
+    <li>No data is uploaded anywhere, shared with anyone, sold, or used for advertising.</li>
+    <li>No third party receives the data.</li>
+    <li>No accounts, no analytics, no cookies, no tracking.</li>
+  </ul>
+
+  <nav>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="https://github.com/inspione/oura-osobni">Source on GitHub</a>
+  </nav>
+
+  <footer>
+    <p>Operated by Martin Basl as a private individual. Contact: martin.basl@gmail.com<br>
+    Last updated 26 September 2026.</p>
+  </footer>
+
+</div>
+</body>
+</html>

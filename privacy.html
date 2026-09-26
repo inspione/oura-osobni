@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Oura Personal Archive</title>
+<style>
+  :root{
+    --bg:#faf7f2; --card:#fff; --ink:#1a1a18; --ink-2:#55534e;
+    --rule:#e4e0d8; --accent:#2a78d6;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#141413;--card:#1c1c1a;--ink:#f2f0ec;--ink-2:#a8a49c;--rule:#2e2e2b;--accent:#6ea8f0}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;}
+  .wrap{max-width:44rem;margin:0 auto;padding:4rem 1.25rem 6rem}
+  h1{font-size:clamp(1.7rem,4.5vw,2.2rem);line-height:1.15;letter-spacing:-.02em;margin:0 0 .3rem}
+  .sub{color:var(--ink-2);margin:0 0 2.5rem;font-size:.95rem}
+  h2{font-size:1.1rem;margin:2.2rem 0 .5rem;letter-spacing:-.01em}
+  p{margin:0 0 1rem;color:var(--ink-2)}
+  ul{margin:0 0 1rem;padding-left:1.2rem;color:var(--ink-2)}
+  li{margin:.3rem 0}
+  a{color:var(--accent)}
+  .card{background:var(--card);border:1px solid var(--rule);border-radius:6px;
+        padding:1.3rem 1.5rem;margin:1.8rem 0}
+  .card p:last-child{margin-bottom:0}
+  nav{display:flex;gap:1.25rem;flex-wrap:wrap;margin-top:3rem;padding-top:1.5rem;
+      border-top:1px solid var(--rule);font-size:.92rem}
+  footer{margin-top:2rem;color:var(--ink-2);font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Privacy Policy</h1>
+  <p class="sub">Oura Personal Archive · Last updated 26 September 2026</p>
+
+  <div class="card">
+    <p><strong>Summary.</strong> This application is used by one person, its developer, to download his own Oura data to his own computer. No data about anyone else is processed, and no data is transmitted to any third party.</p>
+  </div>
+
+  <h2>1. Who is responsible</h2>
+  <p>Martin Basl, a private individual resident in the Czech Republic, acting in a purely personal capacity. Contact: martin.basl@gmail.com</p>
+
+  <h2>2. Whose data is processed</h2>
+  <p>Only the data of the sole user, who is also the developer and the data subject. The application has no other users and no mechanism to acquire any.</p>
+
+  <h2>3. What data is accessed</h2>
+  <p>Through the Oura API, using the scopes granted by the user during OAuth authorisation:</p>
+  <ul>
+    <li>Personal details held in the Oura account (age, height, weight, biological sex)</li>
+    <li>Daily summaries: sleep, readiness, activity, stress, resilience</li>
+    <li>Detailed sleep records, including duration, stages, heart rate variability and respiratory rate</li>
+    <li>Blood oxygen saturation and the breathing disturbance index</li>
+    <li>Heart rate time series, cardiovascular age and VO2 max estimates</li>
+    <li>Workouts, sessions, tags, and ring configuration</li>
+  </ul>
+
+  <h2>4. Why</h2>
+  <p>To maintain a personal long-term health record alongside laboratory results and other measurements, so that trends over years can be reviewed. This is a personal activity, not a commercial one.</p>
+
+  <h2>5. Where the data is stored</h2>
+  <p>In plain CSV files on the user's own personal computer. There is no server, no database service, no cloud storage and no hosted component of any kind. The application cannot be reached from the internet.</p>
+
+  <h2>6. Who the data is shared with</h2>
+  <p>Nobody. The data is not transmitted, published, sold, licensed, or made available to any third party. It is not used for advertising, profiling of others, model training, or research.</p>
+
+  <h2>7. Credentials</h2>
+  <p>OAuth access and refresh tokens are stored in a local file with restricted file permissions on the same computer. They are not logged, printed, or transmitted anywhere except to Oura's own token endpoint when refreshing.</p>
+
+  <h2>8. Retention</h2>
+  <p>Downloaded data is kept for as long as the user wishes to keep his own health record, and can be deleted by him at any time by removing the local files.</p>
+
+  <h2>9. Cookies, analytics, tracking</h2>
+  <p>None. These pages are static HTML with no scripts, no cookies, no analytics and no external resources.</p>
+
+  <h2>10. Revoking access</h2>
+  <p>The user may withdraw the application's access at any time from the Oura developer portal at <a href="https://developer.ouraring.com/">developer.ouraring.com</a>, which immediately invalidates the tokens.</p>
+
+  <h2>11. Rights</h2>
+  <p>Since the only data subject is the operator himself, rights of access, rectification, erasure and portability under the GDPR are exercised directly by deleting or editing the local files. Should this ever change, this policy will be updated before any other person's data is processed.</p>
+
+  <h2>12. Changes</h2>
+  <p>Any change to this policy will be published on this page with an updated date.</p>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="https://github.com/inspione/oura-osobni">Source on GitHub</a>
+  </nav>
+
+  <footer>Contact: martin.basl@gmail.com</footer>
+
+</div>
+</body>
+</html>
